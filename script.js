@@ -4,7 +4,7 @@ console.log('hello')
 
 let textInput = document.querySelector('#input').value;
 //sets up the button
-
+//if % = 14 then math.floor
 
 
 // what the code should look like whithout documentation.

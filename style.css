@@ -1,7 +1,10 @@
 body {
-    background-color:rgb(152, 208, 208);
+    font-family: 'Raleway', sans-serif;
     text-align: center;
+    background-image: url("media/funnyWorld_wallpaper.jpg");
+    background-color:rgb(152, 208, 208);
 }
+
 p {
-    font-size: 20px;
+    font-size: 24px;
 }
