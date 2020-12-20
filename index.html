@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diggin' up Roots!</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-</head>
-<body>
-<h1>Around the world with just a name</h1>    
-<h2>Enter any name and let our computer try to guess where you are from!</h2>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Around the world with just a name</h1>
+    <h2>
+      Enter any name and let our computer try to guess how old you are and where you are from!
+    </h2>
 
-<form id="searchBar">
-    <input type="text" name="inputBar" id="input" placeholder="Enter a name here!">
+    <form id="searchBar">
+      <input
+        type="text"
+        name="inputBar"
+        id="input"
+        placeholder="Enter a name here!"
+      />
 
-    <input type="button" name="submit" id="submitButton" value="Let's Guess!">
-</form>
-
-<p class="para" id="firstResult"></p>
-<p class="para" id="secondResult"></p>
-<p class="para" id="thirdResult"></p>
-
+      <input
+        type="button"
+        name="submit"
+        id="submitButton"
+        value="Let's Guess!"
+      />
+    </form>
+    <p class="para" id="age"></p>
+    <p class="para" id="firstResult"></p>
+    <p class="para" id="secondResult"></p>
+    <p class="para" id="thirdResult"></p>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

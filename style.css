@@ -1,12 +1,12 @@
 body {
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    background-image: url("Media/funnyWorld_wallpaper.jpg");
+    background-color:rgb(152, 208, 208);
+    background-image: url(Media/funnyWorld_wallpaper.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color:rgb(152, 208, 208);
 }
 
 
@@ -21,9 +21,14 @@ h2 {
 
 
 p {
-    font-size: 24px;
+    font-size: 30px;
     color: aqua;
-    
+    padding: 10px;
+}
+
+.para {
+    transition: all 2000ms ease;
+    transform: translateY(100%) rotate(360deg);
 }
 
 .searchBar {
@@ -32,20 +37,22 @@ p {
     justify-content: center;
     min-width: 100px;
     
+    
 }
 
 #submitButton {
     padding: 5px;
     border-radius: 10px;
-    border: 2px grey;
+    border: 1px grey;
     font-size: 20px;
-    background-color: rgb(255, 184, 155);
+    background-image: linear-gradient(to bottom right, aqua, blue);
+     
 }
 
 #input {
     padding: 5px;
     font-size: 24px;
-    border: 2px solid grey;
+    border: 1px solid grey;
     border-radius: 10px;
     
 }
