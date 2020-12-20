@@ -2,7 +2,7 @@ body {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     background-color:rgb(152, 208, 208);
-    background-image: url(Media/funnyWorld_wallpaper.jpg);
+    background-image: url(Media/wordMap.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12,6 +12,7 @@ body {
 
 h1 {
     color: aqua;
+    
 }
 
 
@@ -21,15 +22,32 @@ h2 {
 
 
 p {
-    font-size: 30px;
-    color: aqua;
-    padding: 10px;
+    font-size: 25px;
+    color: black;
+    padding: 5px;
+    width: fit-content
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-2000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
 }
 
 .para {
-    transition: all 2000ms ease;
-    transform: translateY(100%) rotate(360deg);
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    background-color: rgb(245, 221, 202);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+
 }
+
+
 
 .searchBar {
    position: relative;
@@ -45,7 +63,7 @@ p {
     border-radius: 10px;
     border: 1px grey;
     font-size: 20px;
-    background-image: linear-gradient(to bottom right, aqua, blue);
+    background-image: linear-gradient(to bottom right, aqua, orange);
      
 }
 
@@ -54,5 +72,6 @@ p {
     font-size: 24px;
     border: 1px solid grey;
     border-radius: 10px;
+    margin: 20px;
     
 }
