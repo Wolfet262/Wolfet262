@@ -25,7 +25,8 @@ p {
     font-size: 25px;
     color: black;
     padding: 5px;
-    width: fit-content
+    width: fit-content;
+    
 }
 
 @keyframes slidein {
@@ -41,10 +42,11 @@ p {
     animation-name: slidein;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    background-color: rgb(245, 221, 202);
+    background-color: rgb(152, 144, 138);
     border-radius: 10px;
     border-top-left-radius: 0px;
-
+    padding: 12px;
+    /* visibility: hidden; */
 }
 
 
@@ -64,6 +66,7 @@ p {
     border: 1px grey;
     font-size: 20px;
     background-image: linear-gradient(to bottom right, aqua, orange);
+    cursor: pointer;
      
 }
 

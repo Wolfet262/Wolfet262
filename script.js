@@ -6,6 +6,9 @@ button.addEventListener("click", getData);
 async function getData(event) {
   event.preventDefault();
   let textInput = document.querySelector("#input").value;
+
+  
+  
   const url = `https://api.nationalize.io?name=${textInput}`;
   await fetch(url)
     .then((res) => res.json())
@@ -21,7 +24,7 @@ async function getData(event) {
       const lastResult = document.querySelector("#thirdResult");
       lastResult.innerHTML = `Our final guess is: ${
         res.country[2].country_id
-      } with a ${res.country[2].probability.toFixed(2) * 100}% probability`;
+      } with a ${res.country[2].probability.toFixed(2) * 100}% probability.`;
       // res.country[1].probability = Math.floor()
     })
     
@@ -33,4 +36,13 @@ async function getData(event) {
       ageResult.innerHTML = `Our guess is that you are ${res.age} years old!`
     })
     .catch((err) => console.log("somthing went wrong...", err));
+
+
+    // let paraDisplay = document.querySelectorAll('.para');
+    // paraDisplay.style.color = "green"
 }
+
+// let paraDisplay = document.querySelectorAll('.para');
+// paraDisplay.style.visibility = "visable"
+
+//appendchild / remove child for animations
