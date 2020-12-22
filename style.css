@@ -1,12 +1,8 @@
 body {
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    background-color:rgb(0, 0, 0);
-    /* background-image: url(Media/wordMap.jpg); */
-    /* background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
+    background-color:rgb(57, 57, 57);
+
 
 }
 
@@ -24,21 +20,22 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.85;
+    opacity: 0.8;
     z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 h1 {
-    color: peachpuff;
+    color: #F0E7D8;
     font-family: 'Oswald', sans-serif;
 }
 
 
 h2 {
-    color: peachpuff;
+    color: #F0E7D8;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -51,12 +48,14 @@ p {
     
 }
 
+
+
 @keyframes slidein {
     from {
         transform: translateX(-2000px);
     }
     to {
-        transform: translateX(40px);
+        transform: translateX(10px);
     }
 }
 
@@ -65,10 +64,10 @@ p {
     animation-name: slidein;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    background-color: rgb(152, 144, 138);
     border-radius: 10px;
     border-top-left-radius: 0px;
     padding: 12px;
+    background-color: #A63A50;
 }
 
 
@@ -88,9 +87,9 @@ p {
     border-radius: 10px;
     border: 1px grey;
     font-size: 20px;
-    background-image: linear-gradient(to bottom right, blue, orange);
+    background-image: linear-gradient(to bottom right, #F0E7D8, #A63A50);
     cursor: pointer;
-    color: lightgray;
+    
 }
 
 #input {
@@ -99,5 +98,8 @@ p {
     border: 1px solid grey;
     border-radius: 10px;
     margin: 20px;
+    background-color: lightgray;
     
 }
+
+

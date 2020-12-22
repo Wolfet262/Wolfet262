@@ -1,9 +1,4 @@
-//if % = 14 then math.floor
-
 let button = document.querySelector("#submitButton");
-
-
-
 button.addEventListener("click", getData);
 
 async function getData(event) {
@@ -46,7 +41,3 @@ async function getData(event) {
     .catch((err) => console.log("somthing went wrong...", err));
 }
 
-// let paraDisplay = document.querySelectorAll('.para');
-// paraDisplay.style.visibility = "visable"
-
-//appendchild / remove child for animations
