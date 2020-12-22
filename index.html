@@ -10,34 +10,44 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
   </head>
+
+
+
   <body>
-    <h1>Around the world with just a name</h1>
-    <h2>
-      Enter any name and let our computer try to guess how old you are and where you are from!
-    </h2>
-
-    <form id="searchBar">
-      <input
-        type="text"
-        name="inputBar"
-        id="input"
-        placeholder="Enter a name here!"
-      />
-
-      <input
-        type="button"
-        name="submit"
-        id="submitButton"
-        value="Let's Guess!"
-      />
-    </form>
-    <p class="pTag " id="age"></p>
-    <p class="pTag " id="firstResult"></p>
-    <p class="pTag " id="secondResult"></p>
-    <p class="pTag " id="thirdResult"></p>
+    <div class="bgImg">
+      <img src="Media/wordMap.jpg" alt="backgroundImg">
+    
+      <h1>Around the world with just a name</h1>
+      <h2>
+        Enter any name and let our computer try to guess how old you are and where you are from!
+      </h2>
+  
+      <form id="searchBar">
+        <input
+          type="text"
+          name="inputBar"
+          id="input"
+          placeholder="Enter a name here!"
+        />
+  
+        <input
+          type="button"
+          name="submit"
+          id="submitButton"
+          value="Let's Guess!"
+        />
+      </form>
+      <p class="pTag " id="age"></p>
+      <p class="pTag " id="firstResult"></p>
+      <p class="pTag " id="secondResult"></p>
+      <p class="pTag " id="thirdResult"></p>
+   
 
     <script src="script.js"></script>
+    </div>
   </body>
 </html>
