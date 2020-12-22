@@ -38,6 +38,7 @@ p {
     }
 }
 
+
 .para {
     animation-name: slidein;
     animation-duration: 2s;
@@ -46,8 +47,8 @@ p {
     border-radius: 10px;
     border-top-left-radius: 0px;
     padding: 12px;
-    /* visibility: hidden; */
 }
+
 
 
 

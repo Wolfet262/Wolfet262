@@ -1,18 +1,26 @@
 //if % = 14 then math.floor
 
 let button = document.querySelector("#submitButton");
+
+
+
 button.addEventListener("click", getData);
 
 async function getData(event) {
   event.preventDefault();
   let textInput = document.querySelector("#input").value;
-
-  
+  if (textInput === '') {
+    location.reload()
+  }
+  let pTag = document.querySelectorAll('.pTag');
+    pTag.forEach(element => {
+      element.classList.add('para')
+    });
   
   const url = `https://api.nationalize.io?name=${textInput}`;
   await fetch(url)
-    .then((res) => res.json())
-    .then((res) => {
+  .then((res) => res.json())
+  .then((res) => {
       const topResult = document.querySelector("#firstResult");
       topResult.innerHTML = `We think your top nationality is: ${
         res.country[0].country_id
@@ -36,10 +44,6 @@ async function getData(event) {
       ageResult.innerHTML = `Our guess is that you are ${res.age} years old!`
     })
     .catch((err) => console.log("somthing went wrong...", err));
-
-
-    // let paraDisplay = document.querySelectorAll('.para');
-    // paraDisplay.style.color = "green"
 }
 
 // let paraDisplay = document.querySelectorAll('.para');
