@@ -31,4 +31,4 @@ Stretch goal wireframe:
 When the results are displayed, if a result is a 7%,14%, or 28% the api adds on 7-8 0's with a 1 or 2 at the end, it does not do it with any other numbers that are known.
 
 ## Hurdles crossed to finish.
-The single largest delay i had was getting the slidein animation to fire when the P tags were populated. I went through many iterations and ideas but what ended up working was to use the .forEach() higher order function to assign each element a new class that had all of that animations.
+The single largest delay I had was getting the slidein animation to fire when the P tags were populated. I went through many iterations and ideas but what ended up working was to use the .forEach() higher order function to assign each element a new class that had all of that animations.
