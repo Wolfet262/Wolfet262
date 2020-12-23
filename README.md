@@ -1,4 +1,5 @@
 # Wolfet262.github.io
+![Snowy Waterfall](https://i.imgur.com/1ezxeWR.gif)
 ## Working product:
 ![Picture of working product](https://i.imgur.com/n5CrKSh.png)
 
